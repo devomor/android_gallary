@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/row_toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_5"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="@dimen/margin_16">
+
+        <LinearLayout
+            android:id="@+id/ll_secret_snap_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/margin_55"
+                android:layout_height="@dimen/margin_55"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="@dimen/margin_14"
+                app:srcCompat="@drawable/icon_vault_snap"
+                app:tint="@color/black_new" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:minHeight="35dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/txt_secret_snap"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textsize_15" />
+
+                <TextView
+                    android:id="@+id/ll_secret_snap_caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/enable_secret_snap2"
+                    android:textColor="@color/md_grey_500"
+                    android:textSize="@dimen/textsize_10" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchEnableSecretSnap"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:thumbTint="@color/blue"
+                android:trackTint="@color/blue"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:thumb="@drawable/apk_switch_thumb"
+                app:track="@drawable/apk_switch"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <dev.dworks.libs.astickyheader.ui.PinnedSectionGridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:choiceMode="singleChoice"
+                android:columnWidth="100dp"
+                android:drawSelectorOnTop="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="auto_fit"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_no_data_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:src="@drawable/e_intruder_banner" />
+
+            <TextView
+                style="@style/myTextView"
+                android:gravity="center"
+                android:text="@string/txt_no_intruder_found"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_16" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bannerCustomSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_black"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

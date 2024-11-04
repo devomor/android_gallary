@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- About -->
+
+    <!-- Media -->
+    <color name="gray_light">#eeeeee</color>
+    <color name="color_white">#ffffff</color>
+</resources>

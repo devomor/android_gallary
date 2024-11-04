@@ -1,0 +1,2 @@
+//include ':apprate'
+include ':app', 'inappstoragereader'

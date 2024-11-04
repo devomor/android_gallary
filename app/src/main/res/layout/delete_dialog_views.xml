@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogMainLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:id="@+id/memoryregaintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:padding="6.0sp"
+                android:text="@string/delete"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/big_spacing"
+            android:layout_marginRight="@dimen/big_spacing"
+            android:gravity="center"
+            android:text="@string/txt_delete_message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNo"
+                style="@style/DialogButton"
+                android:text="@string/text_no" />
+
+            <TextView
+                android:id="@+id/tvYes"
+                style="@style/DialogButton"
+                android:text="@string/text_yes" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "55279285782",
+    "project_id": "gallery-eae5e",
+    "storage_bucket": "gallery-eae5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55279285782:android:f67a9789096c976befa737",
+        "android_client_info": {
+          "package_name": "com.photo.photography"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55279285782-m25rd1bqoa8sfs0g511ijr77doohmgj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWZ1upiwADkvh-c6f0QZMa952X1-Y9pDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55279285782-m25rd1bqoa8sfs0g511ijr77doohmgj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

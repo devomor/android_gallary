@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_done"
+        android:icon="@drawable/e_save"
+        android:title="@string/done"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/icon_image_add_new"
+        android:title="@string/Add"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_ratio"
+        android:icon="@drawable/icon_ratio_new"
+        android:title="@string/layout_ration"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_all_media"
+            android:checked="true"
+            android:icon="@drawable/e_tab_photos"
+            android:title="@string/all_media" />
+
+        <item
+            android:id="@+id/navigation_item_secure_vault"
+            android:checkable="false"
+            android:icon="@drawable/e_vault"
+            android:title="@string/secure_vault" />
+
+        <item
+            android:id="@+id/navigation_item_duplicate_photo"
+            android:checkable="false"
+            android:icon="@drawable/e_duplicate_files"
+            android:title="@string/duplicate_photo" />
+
+        <item
+            android:id="@+id/navigation_item_collage"
+            android:checkable="false"
+            android:icon="@drawable/e_collage"
+            android:title="@string/txt_collage" />
+
+        <item
+            android:id="@+id/navigation_item_settings"
+            android:checkable="false"
+            android:icon="@drawable/e_settings"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_item_share"
+            android:checkable="false"
+            android:icon="@drawable/e_share"
+            android:title="@string/txt_share" />
+
+        <item
+            android:id="@+id/nav_item_rate_us"
+            android:checkable="false"
+            android:icon="@drawable/e_rate_us"
+            android:title="@string/txt_rate_us" />
+
+        <item
+            android:id="@+id/nav_item_policy"
+            android:checkable="false"
+            android:icon="@drawable/e_policy"
+            android:title="@string/policy" />
+
+        <item
+            android:id="@+id/nav_item_about_us"
+            android:checkable="true"
+            android:icon="@drawable/e_user"
+            android:title="@string/txt_about_us" />
+
+        <item
+            android:id="@+id/nav_item_report"
+            android:checkable="false"
+            android:icon="@drawable/e_report"
+            android:title="@string/txt_report" />
+
+        <item
+            android:checkable="false"
+            android:title="" />
+
+    </group>
+
+</menu>

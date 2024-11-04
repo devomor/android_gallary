@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="security_question">
+        <item>Please select security question</item>
+        <item>What primary school did you attend?</item>
+        <item>What were the last four digits of your childhood telephone number?</item>
+        <item>In what town or city did your parents meet?</item>
+        <item>What\'s your father\'s name?</item>
+        <item>What\'s your mother\'s name?</item>
+        <item>What\'s your favorite movie?</item>
+        <item>What\'s your pets name?</item>
+        <item>What\'s your dream job?</item>
+        <item>In what city did you parents meet?</item>
+    </string-array>
+</resources>

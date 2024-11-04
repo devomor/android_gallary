@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imagelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1.0">
+
+    <ImageView
+        android:id="@+id/img_duplicate_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="4.0dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_rsz_empty_photo" />
+
+    <CheckBox
+        android:id="@+id/individualcheckbox"
+        style="@style/checkboxStyleType1"
+        android:layout_width="@dimen/margin_20"
+        android:layout_height="@dimen/margin_20"
+        android:layout_alignTop="@+id/img_duplicate_image"
+        android:layout_alignRight="@+id/img_duplicate_image"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/e_checkbox_custom"
+        android:button="@null" />
+
+    <TextView
+        android:id="@+id/show_size_on_image"
+        android:layout_width="fill_parent"
+        android:layout_height="18.0dip"
+        android:layout_alignBottom="@+id/img_duplicate_image"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:background="#4D000000"
+        android:gravity="center"
+        android:textColor="@color/whiteOnly"
+        android:textSize="10.0dip" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Accent Color Collection-->
+    <color name="accent_black">#000000</color>
+    <color name="accent_cyan">#00bcd4</color>
+
+    <!--MATERIAL COLORS-->
+    <color name="md_black_1000">#000000</color>
+    <color name="md_black_1000_transparent">#64000000</color>
+
+    <color name="md_dark_background">@color/md_grey_850</color>
+    <color name="md_dark_primary_text">#FFFFFFFF</color>
+
+    <!--ALL COLOURS-->
+    <color name="md_amber_500">#FFC107</color>
+
+
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_500">#9E9E9E</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_850">#303030</color>
+
+    <color name="md_red_500">#F44336</color>
+
+    <color name="md_white_1000">#FFFFFF</color>
+
+    <color name="transparent_md_amber_500">#99FFC107</color>
+    <color name="dark_gray">#4C535B</color>
+    <color name="red">#FF3B00</color>
+    <color name="red_press">#990000</color>
+
+
+    //Collage
+
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="color_primary">#0375ea</color>
+    <color name="colorPrimary">#0375ea</color>
+    <color name="colorAccent">#0375ea</color>
+
+    <color name="vault_line">#c9d3d8</color>
+    <color name="vault_edit_line">#5f5f5f</color>
+
+    <color name="primaryColor">#007991</color>
+    <color name="light_gray2">#eeeeee</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="light_gray_more">#cccccc</color>
+    <color name="color_bottom_option_back">#FFFFFF</color>
+    <color name="colorWhiteOverlay">#abffffff</color>
+
+    <color name="option_text_selected_color">#2692ff</color>
+    <color name="option_text_color">#000000</color>
+    <color name="option_icon_color">#000000</color>
+
+    <color name="colorBlack_40">#66000000</color>
+    <color name="colorBlack_60">#c5000000</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="option_icon_selected_color">#2692ff</color>
+    <color name="light_gray">#aaa</color>
+    <color name="border_view_background">#AAAAAA</color>
+    <color name="menu_color">#009531</color>
+    <string name="border_color">Color border</string>
+
+    <color name="color_chooser_circle_border">#99ffffff</color>
+    <color name="color_chooser_cirlce">#E3B3C5</color>
+    <color name="border_view_foreground">#A6033E</color>
+    <color name="color_black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="checked_item_bg">#30010405</color>
+    <color name="white_new">#ffffff</color>
+    <color name="black_new">#000000</color>
+
+
+
+    <color name="grey_400">#BDBDBD</color>
+    <color name="blue">#0375ea</color>
+    <color name="toolbar_popup_back">#ffffff</color>
+
+    <!-- Lock pad colors -->
+    <color name="pattern_line_color">#8003a9f7</color>
+    <color name="lockpad_back">#ffffff</color>
+    <color name="lockpad_text_color">#333333</color>
+    <color name="lockpad_number_back_box">#FBFBFB</color>
+    <color name="lockpad_number_back_box_selected">#FFFFFF</color>
+    <color name="lockpad_number_text">#5f5f5f</color>
+    <color name="lockpad_number_text_selected">#0375ea</color>
+    <color name="gray">#808080</color>
+
+    <!--    /////////////////New///////////////////////-->
+    <color name="accent_blue">#0375ea</color>
+
+    <color name="whiteOnly">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="accent_grey">#7C7C7C</color>
+    <color name="max_grey">#4E4E4E</color>
+    <color name="app_button">#0375ea</color>
+
+    <color name="svg_ico_color">#000</color>
+    <color name="card_color">#F8F8F8</color>
+    <color name="app_bg_color">#FFFFFF</color>
+    <color name="color_placeholder">#F8F8F8</color>
+
+    <color name="tab_selected_new">#000</color>
+    <color name="tab_unselected_new">#7C7C7C</color>
+    <color name="tab_grey">#F3F3F3</color>
+    <color name="dialog_bg_color">#FFF</color>
+    <color name="ads_bg">#EEEEEF</color>
+    <color name="color_switch">#808080</color>
+
+</resources>

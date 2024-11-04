@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_bg_color"
+        android:elevation="5dp"
+        app:contentInsetLeft="@dimen/margin_0"
+        app:contentInsetStart="@dimen/margin_0"
+        app:popupTheme="@style/customThemeApp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/close_snap_activity"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_16"
+                app:srcCompat="@drawable/e_close" />
+
+            <TextView
+                android:id="@+id/txt_main_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/txt_security_question"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/bannerCustomSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_black"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bannerCustomSize"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/security_question"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/textsize_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5">
+
+            <Spinner
+                android:id="@+id/spin_security_question"
+                style="@style/style_recovery_question_spinner"
+                android:background="@drawable/apk_border" />
+
+            <ImageView style="@style/style_recovery_question_spinner_arrow" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_input_answer"
+            style="@style/style_recovery_answer"
+            android:background="@drawable/apk_border"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/btn_submit"
+            style="@style/styleButtonBlue"
+            android:layout_width="@dimen/submit_button_small_width"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:text="@string/txt_submit"
+            android:textColor="@color/whiteOnly" />
+
+    </LinearLayout>
+
+</RelativeLayout>

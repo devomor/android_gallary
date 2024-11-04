@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        style="@style/mainOptionLinear"
+        android:layout_height="@dimen/margin_70"
+        android:padding="@dimen/margin_5">
+
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="@dimen/margin_42"
+            android:layout_height="@dimen/margin_42"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_home" />
+
+        <TextView
+            android:id="@+id/tv_species"
+            style="@style/optionText"
+            android:text="Text"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_12" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_height="@dimen/margin_70"-->
+    <!--style="@style/mainOptionLinear"-->
+    <!--android:padding="@dimen/margin_5">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_thumbnail"-->
+    <!--android:layout_width="@dimen/margin_40"-->
+    <!--android:layout_height="@dimen/margin_40"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@drawable/ic_text_24dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_species"-->
+    <!--style="@style/optionText"-->
+    <!--android:textSize="@dimen/textSize_10"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:text="Text" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->

@@ -1,0 +1,124 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/download_wa_status"
+        android:icon="@drawable/e_download"
+        android:title="@string/download_wa_status_menu_title"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/sort_action"
+        android:icon="@drawable/e_sort"
+        android:title="@string/sort_menu_title"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/date_taken_sort_mode"
+                    android:checkable="false"
+                    android:title="@string/date"
+                    app:showAsAction="never">
+                    <menu>
+                        <group android:checkableBehavior="single">
+                            <item
+                                android:id="@+id/date_taken_sort_by_day"
+                                android:checked="true"
+                                android:title="@string/by_day"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/date_taken_sort_by_month"
+                                android:title="@string/by_month"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/date_taken_sort_by_year"
+                                android:title="@string/by_year"
+                                app:showAsAction="never" />
+                        </group>
+                    </menu>
+                </item>
+                <item
+                    android:id="@+id/date_sort_only"
+                    android:title="@string/date"
+                    android:visible="false"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/size_sort_mode"
+                    android:title="@string/size"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/numeric_sort_mode"
+                    android:title="@string/numeric"
+                    app:showAsAction="never" />
+            </group>
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/ascending_sort_order"
+                    android:title="@string/ascending"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+    <group android:id="@+id/edit_mode_items">
+        <item
+            android:id="@+id/cancelSelection"
+            android:icon="@drawable/e_close"
+            android:title="@string/cancel_selection"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/sharePhotos"
+            android:icon="@drawable/e_share"
+            android:title="@string/share"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/delete"
+            android:icon="@drawable/e_delete"
+            android:title="@string/delete"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/collage"
+            android:title="@string/collage"
+            android:visible="false"
+            app:showAsAction="never" />
+        <!--        <item-->
+        <!--            android:id="@+id/action_copy"-->
+        <!--            android:title="@string/copy_to"-->
+        <!--            app:showAsAction="never" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/action_move"-->
+        <!--            android:title="@string/move_to"-->
+        <!--            app:showAsAction="never" />-->
+        <item
+            android:id="@+id/action_move_to_vault"
+            android:title="@string/move_to_vault"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/one_selected_items">
+        <item
+            android:id="@+id/action_palette"
+            android:title="@string/palette"
+            android:visible="false"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/set_as_cover"
+            android:title="@string/set_cover"
+            android:visible="false"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rename"
+            android:title="@string/rename"
+            app:showAsAction="never" />
+    </group>
+    <item
+        android:id="@+id/select_all"
+        android:icon="@drawable/e_check_double"
+        android:title="@string/select_all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/selection_done"
+        android:icon="@drawable/e_check"
+        android:title="@string/select_all"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+</menu>

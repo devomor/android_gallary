@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/DialogMainLayout">
+
+    <LinearLayout
+        android:id="@+id/ll_total_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:weightSum="1.0">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:id="@+id/memoryregaintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:padding="6.0sp"
+                android:text="@string/results"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cleaned_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0sp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10.0sp"
+                android:paddingRight="10.0sp"
+                android:text="@string/Similar_Duplicates_Cleaned"
+                android:textColor="@color/black"
+                android:textSize="15.0sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/cleaned_memory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0sp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10.0sp"
+                android:paddingRight="10.0sp"
+                android:text="@string/Space_Regained"
+                android:textColor="@color/black"
+                android:textSize="15.0sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/dialogButtonok"
+                style="@style/DialogButton"
+                android:layout_weight="1.0"
+                android:text="@string/close" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

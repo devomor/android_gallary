@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/row_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60"
+                android:layout_margin="@dimen/margin_20"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardCornerRadius="@dimen/margin_16">
+
+                <LinearLayout
+                    android:id="@+id/linPhotoVault"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_60"
+                        android:layout_height="@dimen/margin_60"
+                        android:padding="@dimen/margin_16"
+                        app:srcCompat="@drawable/icon_vault_photo"
+                        app:tint="@color/black_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/photo_vault"
+                        android:textColor="@color/black_new"
+                        android:textSize="@dimen/textsize_15" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardCornerRadius="@dimen/margin_16">
+
+                <LinearLayout
+                    android:id="@+id/linVideoVault"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_60"
+                        android:layout_height="@dimen/margin_60"
+                        android:padding="@dimen/margin_16"
+                        app:srcCompat="@drawable/icon_vault_video"
+                        app:tint="@color/black_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/video_vault"
+                        android:textColor="@color/black_new"
+                        android:textSize="@dimen/textsize_15" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSecretSnap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60"
+                android:layout_margin="@dimen/margin_20"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardCornerRadius="@dimen/margin_16">
+
+                <LinearLayout
+                    android:id="@+id/linSecretSnap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_60"
+                        android:layout_height="@dimen/margin_60"
+                        android:padding="@dimen/margin_14"
+                        app:srcCompat="@drawable/icon_vault_snap"
+                        app:tint="@color/black_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/secret_snap"
+                        android:textColor="@color/black_new"
+                        android:textSize="@dimen/textsize_15" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/icon_back_ads"
+                android:gravity="center"
+                android:minHeight="@dimen/ads_size"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="Ads"
+                    android:textColor="@color/md_grey_300"
+                    android:textSize="@dimen/textsize_16" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

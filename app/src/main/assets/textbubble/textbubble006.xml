@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bubble
+    textColor="#FFFFFF"
+    textSize="40"
+    strokeColor=""
+    font="Impact"
+    bubbleImage="bubble_images/06.png"
+    thumbImage="bubble_thumbs/06.png"
+    guid="textbubble006"
+    type="normal"
+    textRect="52,104,198,186"
+    textMatrix="1.00000,0.00000,0.00000,1.00000,0.00000,0.00000"
+    textOpacity="100"
+    bubbleOpacity="100"
+    shadow="false"
+    version="1.0"/>
+

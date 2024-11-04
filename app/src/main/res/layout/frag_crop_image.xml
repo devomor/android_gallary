@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <com.photo.photography.crop_image.CropImageViews
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/spacing_xlarge"
+        custom:scv_background_color="@color/light_gray2"
+        custom:scv_crop_mode="fit_image"
+        custom:scv_frame_color="@color/color_white"
+        custom:scv_frame_stroke_weight="1dp"
+        custom:scv_guide_color="@color/color_white"
+        custom:scv_guide_show_mode="show_always"
+        custom:scv_guide_stroke_weight="1dp"
+        custom:scv_handle_color="@color/color_white"
+        custom:scv_handle_show_mode="show_always"
+        custom:scv_handle_size="8dp"
+        custom:scv_min_frame_size="50dp"
+        custom:scv_overlay_color="@color/overlay"
+        custom:scv_touch_padding="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/buttonFitImage"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:src="@drawable/icon_crop_original_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="FIT IMAGE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buttonFree"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:src="@drawable/icon_crop_free_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="FREE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button1_1"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:src="@drawable/icon_crop_square_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="SQUARE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button3_4"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:rotation="90"
+                            android:src="@drawable/icon_crop_5_4_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="3:4" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button4_3"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:src="@drawable/icon_crop_5_4_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="4:3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button9_16"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:rotation="90"
+                            android:src="@drawable/icon_crop_16_9_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="9:16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button16_9"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:src="@drawable/icon_crop_16_9_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="16:9" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buttonCustom"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:src="@drawable/icon_crop_7_5_black_48dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="7:5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buttonCircle"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            custom:srcCompat="@drawable/icon_crop_circle_white_24dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="CIRCLE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buttonShowCircleButCropAsSquare"
+                        style="@style/mainOptionLinear">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:background="@drawable/icon_crop_free_black_48dp"
+                            android:padding="4dp"
+                            custom:srcCompat="@drawable/icon_crop_circle_white_24dp"
+                            custom:tint="@color/black_new" />
+
+                        <TextView
+                            style="@style/optionText"
+                            android:text="CIRCLE_SQUARE" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linRotation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonRotateLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/spacing"
+                    custom:srcCompat="@drawable/icon_rotate_left_black_24dp"
+                    custom:tint="@color/black_new" />
+
+                <ImageButton
+                    android:id="@+id/buttonRotateRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/spacing"
+                    custom:srcCompat="@drawable/icon_rotate_right_black_24dp"
+                    custom:tint="@color/black_new" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/buttonCancel"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/linRotation"
+                android:background="?attr/selectableItemBackground"
+                android:padding="15dp"
+                android:src="@drawable/icon_cross_white"
+                custom:tint="@color/black_new" />
+
+            <ImageView
+                android:id="@+id/buttonDone"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/linRotation"
+                android:layout_alignParentRight="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="15dp"
+                android:src="@drawable/icon_checkmark_white"
+                custom:tint="@color/black_new" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adContainerView"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/row_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_5dp"
+                android:layout_alignBottom="@id/frame_container"
+                android:background="@drawable/icon_header_shadow_light"
+                android:rotation="180" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/selectedImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_color"
+            android:elevation="@dimen/margin_5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/imageCountView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/please_select_photo"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/tvStartCollageEditing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/styleButtonBlue"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="@dimen/margin_20dp"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:paddingRight="@dimen/margin_20dp"
+                    android:paddingBottom="@dimen/margin_5dp"
+                    android:text="@string/next" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/selectedImageRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/adContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

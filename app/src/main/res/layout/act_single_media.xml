@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.photo.photography.view.HackeyViewPager
+            android:id="@+id/photos_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transitionName="transitionImageMain" />
+
+        <RelativeLayout
+            android:id="@+id/relToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorBlack_40"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/customThemeApp"
+                app:title="@string/app_name_new" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/adContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlack_40" />
+
+        <ImageButton
+            android:id="@+id/ivSoundOnOffActivity"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_35"
+            android:layout_above="@id/linBottomOptions"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/icon_play_button_capsual"
+            android:padding="@dimen/margin_8"
+            android:src="@drawable/e_mute"
+            app:tint="@color/whiteOnly" />
+
+        <ImageButton
+            android:id="@+id/ivDownloadWAStatus"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_35"
+            android:layout_above="@id/linBottomOptions"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/icon_play_button_capsual"
+            android:padding="@dimen/margin_8"
+            android:src="@drawable/e_download"
+            app:tint="@color/whiteOnly" />
+
+        <LinearLayout
+            android:id="@+id/linPlayVideo"
+            android:layout_width="@dimen/margin_100"
+            android:layout_height="@dimen/margin_35"
+            android:layout_above="@id/linBottomOptions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/icon_play_button_capsual"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/margin_20"
+                android:layout_height="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_6"
+                android:src="@drawable/e_play"
+                app:tint="@color/whiteOnly" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/play"
+                android:textColor="@color/whiteOnly" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linBottomOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adContainerView"
+            android:background="@color/colorBlack_40"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linEdit"
+                style="@style/ViewImageBottomOptionParent">
+
+                <ImageView
+                    style="@style/ViewImageBottomOptionIcon"
+                    android:contentDescription="@string/app_name_new"
+                    android:src="@drawable/e_edit_pencil" />
+
+                <TextView
+                    style="@style/ViewImageBottomOptionText"
+                    android:text="@string/edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linVideoRotation"
+                style="@style/ViewImageBottomOptionParent">
+
+                <ImageView
+                    style="@style/ViewImageBottomOptionIcon"
+                    android:contentDescription="@string/app_name_new"
+                    android:src="@drawable/e_rotate_video" />
+
+                <TextView
+                    style="@style/ViewImageBottomOptionText"
+                    android:text="@string/rotate" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linShare"
+                style="@style/ViewImageBottomOptionParent">
+
+                <ImageView
+                    style="@style/ViewImageBottomOptionIcon"
+                    android:contentDescription="@string/app_name_new"
+                    android:src="@drawable/e_share" />
+
+                <TextView
+                    style="@style/ViewImageBottomOptionText"
+                    android:text="@string/share" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linDelete"
+                style="@style/ViewImageBottomOptionParent">
+
+                <ImageView
+                    style="@style/ViewImageBottomOptionIcon"
+                    android:contentDescription="@string/app_name_new"
+                    android:src="@drawable/e_delete" />
+
+                <TextView
+                    style="@style/ViewImageBottomOptionText"
+                    android:text="@string/delete" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linMoveInVault"
+                style="@style/ViewImageBottomOptionParent">
+
+                <ImageView
+                    style="@style/ViewImageBottomOptionIcon"
+                    android:contentDescription="@string/app_name_new"
+                    android:src="@drawable/e_vault" />
+
+                <TextView
+                    style="@style/ViewImageBottomOptionText"
+                    android:text="@string/hide" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linDetails"
+                style="@style/ViewImageBottomOptionParent">
+
+                <ImageView
+                    style="@style/ViewImageBottomOptionIcon"
+                    android:contentDescription="@string/app_name_new"
+                    android:src="@drawable/e_info" />
+
+                <TextView
+                    style="@style/ViewImageBottomOptionText"
+                    android:text="@string/details" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/there_nothing_to_shows" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relNothingToShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/emoji_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:text="@string/emoji_master"
+            android:textColor="@color/white_new"
+            android:textSize="@dimen/textsize_25" />
+
+        <TextView
+            android:id="@+id/nothing_to_show_text_emoji_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emoji_master"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/small_spacing"
+            android:gravity="center_horizontal"
+            android:text="@string/there_is_nothing_to_show"
+            android:textColor="@color/white_new"
+            android:textSize="@dimen/textsize_16" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

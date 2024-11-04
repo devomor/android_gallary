@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVideo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_55"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/icon_ripple_btn_40"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardCornerRadius="@dimen/margin_24">
+
+                <RelativeLayout
+                    android:id="@+id/rlVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/margin_15">
+
+                    <ImageView
+                        android:id="@+id/ivVideoImg"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/e_video"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/ivVideoImg"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/margin_10"
+                        android:text="@string/videos"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/e_arrow_right" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/albums"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardVideo"
+                android:layout_gravity="center_horizontal"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_5"
+                android:scrollbars="none" />
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/nothing_to_show_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emoji_master"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/there_is_nothing_to_show"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+</RelativeLayout>

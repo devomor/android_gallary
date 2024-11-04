@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.photo.photography.view.SquareRelativeLayout
+        android:id="@+id/media_card_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_0_1"
+        android:foreground="@drawable/icon_ripple">
+
+        <ImageView
+            android:id="@+id/photo_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:transitionName="transitionImageMain" />
+
+        <TextView
+            android:id="@+id/photo_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/md_black_1000_transparent"
+            android:elevation="10dp"
+            android:maxLines="1"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/md_dark_primary_text"
+            android:textSize="@dimen/medium_small_text"
+            android:visibility="gone"
+            tools:targetApi="lollipop" />
+
+        <com.photo.photography.liz_theme.ui_theme.ThemedIcons
+            android:id="@+id/gif_icon"
+            android:layout_width="@dimen/icon_sub_width_height"
+            android:layout_height="@dimen/icon_sub_width_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:elevation="@dimen/icon_elevation"
+            android:visibility="gone"
+            app:iiv_color="@color/whiteOnly"
+            app:iiv_icon="gmd-gif"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerInParent="true"
+            android:elevation="@dimen/icon_elevation"
+            android:visibility="gone" />
+
+        <com.photo.photography.liz_theme.ui_theme.ThemedIcons
+            android:id="@+id/icon2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/icon_elevation"
+            android:padding="8dp"
+            android:tint="@color/white"
+            android:visibility="gone"
+            app:iiv_color="@color/whiteOnly"
+            app:iiv_icon="gmd-play-circle-filled"
+            tools:targetApi="lollipop" />
+
+    </com.photo.photography.view.SquareRelativeLayout>
+
+
+</LinearLayout>

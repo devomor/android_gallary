@@ -1,0 +1,59 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.photo.photography.act.ActSingleMedia">
+    <item
+        android:id="@+id/slide_show"
+        android:orderInCategory="1"
+        android:title="@string/start_slide_show"
+        app:showAsAction="never" />
+    <group android:id="@+id/on_internal_storage">
+        <item
+            android:id="@+id/action_rename"
+            android:orderInCategory="2"
+            android:title="@string/rename"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/only_photos_options">
+        <item
+            android:icon="@drawable/e_rotate_180"
+            android:orderInCategory="2"
+            android:title="@string/rotate"
+            app:showAsAction="always">
+            <menu>
+                <item
+                    android:id="@+id/e_rotate_right_90"
+                    android:icon="@drawable/icon_rotate_right_new"
+                    android:title="@string/rotate_right_90" />
+                <item
+                    android:id="@+id/e_rotate_left_90"
+                    android:icon="@drawable/icon_rotate_left_new"
+                    android:title="@string/rotate_left_90" />
+                <item
+                    android:id="@+id/e_rotate_180"
+                    android:icon="@drawable/icon_rotate_180_new_black"
+                    android:title="@string/rotate_180" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/action_palette"
+            android:orderInCategory="3"
+            android:title="@string/palette"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_use_as"
+            android:orderInCategory="4"
+            android:title="@string/use_as"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_print"
+            android:orderInCategory="5"
+            android:title="@string/print"
+            app:showAsAction="never" />
+    </group>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="6"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+</menu>

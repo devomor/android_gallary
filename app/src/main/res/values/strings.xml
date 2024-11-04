@@ -1,0 +1,591 @@
+<resources>
+    <!--LEAFPIC STRINGS-->
+    <string name="app_name">Gallery</string>
+    <!--    <string name="app_name_new">Gallery</string>-->
+    <string name="gallery">Gallery</string>
+    <string name="select_color">Select Color</string>
+
+    <!--AUTHORS-->
+
+    <!--EASTER EGG-->
+    <string name="emoji_master">¯\\_(ツ)_/¯</string>
+
+    <!--FINGERPRINT-->
+
+    <!--ACTIONS-->
+    <string name="camera">Camera</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="hide">Hide</string>
+    <string name="rename_photo_action">Rename photo</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="videos">Video</string>
+    <string name="images">Images</string>
+
+    <string name="sort_menu_title">Sort</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="date_taken">Date Taken</string>
+
+    <string name="rename_error">Unable to rename this file</string>
+
+
+    <string name="size">Size</string>
+    <string name="numeric">As number</string>
+    <string name="ascending">Ascending</string>
+
+    <string name="select_all">Select All</string>
+    <string name="clear_selected">Clear Selected</string>
+
+    <string name="share">Share</string>
+    <string name="rotate">Rotate</string>
+    <string name="rotate_right_90">Rotate right 90°</string>
+    <string name="rotate_left_90">Rotate left 90°</string>
+    <string name="rotate_180">Rotate 180°</string>
+    <string name="use_as">Use as</string>
+    <string name="edit">Edit</string>
+    <string name="rename">Rename</string>
+    <string name="details">Details</string>
+    <string name="print">Print</string>
+    <string name="show_more">Show More</string>
+    <string name="set_cover">Set as album Cover</string>
+    <string name="new_folder">New Folder</string>
+
+    <!--DIALOG MESSAGES-->
+    <string name="delete_album_message">Are you sure you want to delete this album?</string>
+    <string name="delete_photo_message">Are you sure you want to delete this media?</string>
+
+    <!--ITEMS-->
+    <string name="video_player">Video Player</string>
+    <string name="media">Media</string>
+    <string name="files">Files</string>
+    <string name="send_to">Send to</string>
+    <string name="of">%1$d of %2$d</string>
+
+    <!--PALETTE-->
+    <string name="palette">Palette</string>
+    <string name="color">Color</string>
+    <string name="copy_clipboard">Copied to clipboard</string>
+
+
+    <!--AFFIX-->
+
+
+    <!--Collage-->
+    <string name="collage">Collage</string>
+
+
+    <!--RANDOM-->
+    <string name="done">Done!</string>
+    <string name="there_is_nothing_to_show">There\'s nothing to show</string>
+    <string name="nothing_changed">Nothing changed</string>
+    <string name="print_error">Unable to print the picture</string>
+
+    <!--SETTINGS PREFERENCES-->
+
+    <!--SECURITY-->
+
+    <!--SETTINGS-->
+    <string name="settings">Settings</string>
+
+    <string name="theme">Theme</string>
+    <string name="dark">Dark</string>
+
+
+    <!--ABOUT STRINGS-->
+
+    <!--FINGERPRINT-->
+
+    <!--PHOTO DETAILS-->
+    <string name="path">Path</string>
+    <string name="type">Type</string>
+    <string name="resolution">Resolution</string>
+    <string name="exif">EXIF</string>
+    <string name="orientation">Orientation</string>
+    <string name="location">Location</string>
+
+    <!--DRAWER ITEMS-->
+    <string name="local_folder">Local Folders</string>
+    <string name="all_media">All Media</string>
+    <string name="secure_vault">Secure Vault</string>
+
+    <!--VIDEO PLAYER-->
+
+    <!--ERRORS-->
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="storage_permission_denied">Permission to access storage was denied! We\'re not able to get your media!</string>
+    <string name="camera_permission_denied">Permission to access camera was denied!\n We\'re not able to get your vault snooped person!</string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="got_permission_wr_sdcard">Obtained permission to write on the SD-Card.</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="extrnal_storage">External Storage</string>
+    <string name="error_occured_open_media">An error occurred while opening this media.</string>
+    <string name="error_thumbnail">Unable to find a thumbnail for the album.</string>
+    <string name="no_app_to_perform">Unable to find an app to perform this action.</string>
+    <string name="start_slide_show">Start Slideshow</string>
+    <string name="stop_slide_show">Stop Slideshow</string>
+    <string name="waring_share_multiple_file_types">There may be problems sharing multiple file types.</string>
+    <string name="toolbar_selection_count" translatable="false">%1$d of %2$d</string>
+    <string name="delete_bottom_sheet_title">Cleaning up memories…</string>
+
+    <!-- Timeline -->
+
+
+    <!--liz-->
+
+
+    <string name="app_version">version 1.1</string>
+
+
+    <string name="photo_editor_dialog_color_picker">Color Picker</string>
+    <string name="photo_editor_press_color_to_apply">Press on Color to apply</string>
+    <string name="waring_out_of_memory">Not enough memory. Please remove images or your program will be crashed.!!!</string>
+    <string name="change">Change</string>
+    <string name="photo_editor_share_image">Share Image</string>
+
+    <string name="photo_editor_ok">OK</string>
+    <string name="photo_editor_cancel">Cancel</string>
+
+
+    <string name="photo_editor_app_name">Photo Editor</string>
+
+
+    <string name="photo_library">Photo Gallery</string>
+    <string name="photo_editor_square">Square</string>
+    <string name="fit">Fit</string>
+    <string name="select">Select</string>
+    <string name="alter_background">Background Photo</string>
+    <string name="background_color">Background Color</string>
+    <string name="please_select_photo">Please select %d photo(s)</string>
+
+    <string name="please_select_photo_without_counting">Please select photo(s)</string>
+    <string name="you_need_photo">You only need %d photo(s)</string>
+    <string name="guide_list_view_settings">Swipe to left on list view to get more actions</string>
+    <string name="default_font">Default Font</string>
+
+    <string name="permission_guide">You need to allow Photo Collage Grid Frame app to access the following permissions to use this app:</string>
+    <string name="permission_denied_and_guide_to_setting">Permission denied! Please enable permission to perform any editing operation</string>
+    <string name="permission_write_ex_storage">WRITE_EXTERNAL_STORAGE</string>
+    <string name="Add">Add</string>
+    <string name="layout_ration">Layout Ration</string>
+    <string name="golden_ratio">Golden Ratio</string>
+    <string name="select_ratio">Select Ratio</string>
+    <string name="creating">Creating...</string>
+    <string name="app_not_found">App not found</string>
+
+    <string name="default_backgrounds">Default Backgrounds</string>
+    <string name="default_stickers">Default Stickers</string>
+    <string name="gallery_albums">Gallery Albums</string>
+    <string name="warning_uninstall_default_package">You can not remove default packages</string>
+    <string name="photo_editor_confirm_uninstall">Are you sure you want to uninstall this package?</string>
+    <string name="album_image">Album Images</string>
+    <string name="photo_editor_internal_storage">Internal storage</string>
+    <string name="photo_editor_waring_out_of_memory">Not enough memory. Please remove images or your program will be crashed.!!!</string>
+    <string name="txt_share">Share</string>
+    <string name="txt_rate_us">Rate us</string>
+    <string name="txt_about_us">About Us</string>
+    <string name="txt_report">Report</string>
+    <string name="share_using">Share using</string>
+    <string name="txt_app_share_info">I have made this creative photo using GalleryApp on https://play.google.com/store/apps/details?id=com.photogallery.photography</string>
+    <string name="txt_delete_message">Do you want to delete this photo?</string>
+    <string name="txt_no">No</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_file_delete_successfully">File Deleted Successfully</string>
+
+    <string name="txt_shareMessage">Mange your media using Gallery on https://play.google.com/store/apps/details?id=com.photogallery.photography</string>
+    <string name="txt_share_with">Share with</string>
+    <string name="mainEmail">xyz@gmail.com</string>
+    <string name="txt_customer_support">Support</string>
+
+
+    <string name="txtPleaseWait">Please wait…</string>
+    <string-array name="mainOptionArr">
+        <item>@string/txtCropRotate</item>
+        <item>@string/txtText</item>
+        <item>@string/txtSticker</item>
+        <item>@string/txtBrush</item>
+        <item>@string/txtFilters</item>
+        <item>@string/txtAdjust</item>
+    </string-array>
+
+    <string-array name="adjustOptionArr">
+        <item>@string/txtBrightness</item>
+        <item>@string/txtContrast</item>
+        <item>@string/txtSharpness</item>
+        <item>@string/txtSaturation</item>
+        <item>@string/txtBlur</item>
+        <item>@string/txtGamma</item>
+        <item>@string/txtSepia</item>
+        <item>@string/txtVignette</item>
+    </string-array>
+
+    <string-array name="textFontNameArr">
+        <item>font</item>
+        <item>font1</item>
+        <item>font2</item>
+        <item>font3</item>
+        <item>font4</item>
+        <item>font5</item>
+        <item>font6</item>
+        <item>font7</item>
+        <item>font8</item>
+        <item>font9</item>
+        <item>font10</item>
+        <item>font11</item>
+        <item>font12</item>
+        <item>font13</item>
+        <item>font14</item>
+        <item>font15</item>
+        <item>font16</item>
+        <item>font17</item>
+        <item>font18</item>
+        <item>font19</item>
+    </string-array>
+
+    <string-array name="textFontColorArr">
+        <item>#000000</item>
+        <item>#ffffff</item>
+        <item>#f44336</item>
+        <item>#E91E63</item>
+        <item>#9C27B0</item>
+        <item>#673AB7</item>
+        <item>#3F51B5</item>
+        <item>#2196F3</item>
+        <item>#03A9F4</item>
+        <item>#00BCD4</item>
+        <item>#009688</item>
+        <item>#4CAF50</item>
+        <item>#8BC34A</item>
+        <item>#CDDC39</item>
+        <item>#FFEB3B</item>
+        <item>#FFC107</item>
+        <item>#FF9800</item>
+        <item>#FF5722</item>
+        <item>#795548</item>
+        <item>#9E9E9E</item>
+        <item>#607D8B</item>
+        <item>#d3b2d1</item>
+        <item>#630947</item>
+        <item>#a40778</item>
+        <item>#35235d</item>
+        <item>#4c49a2</item>
+        <item>#4800e9</item>
+        <item>#9692ff</item>
+        <item>#49aec0</item>
+        <item>#69d2e7</item>
+        <item>#a7dbd8</item>
+        <item>#0b2e59</item>
+        <item>#0d6d59</item>
+        <item>#7ab317</item>
+        <item>#a0c55f</item>
+        <item>#fff600</item>
+        <item>#ff5a27</item>
+        <item>#a31a48</item>
+        <item>#dd577a</item>
+        <item>#AF8993</item>
+        <item>#0E768B</item>
+        <item>#FF9A7B</item>
+        <item>#65CE38</item>
+        <item>#47457C</item>
+        <item>#53C2AB</item>
+        <item>#8763D7</item>
+        <item>#12c19d</item>
+        <item>#8000BF</item>
+        <item>#D47500</item>
+        <item>#BA18AD</item>
+        <item>#FF0004</item>
+        <item>#d3b2d1</item>
+        <item>#630947</item>
+        <item>#a40778</item>
+        <item>#35235d</item>
+        <item>#4c49a2</item>
+        <item>#4800e9</item>
+        <item>#9692ff</item>
+        <item>#49aec0</item>
+        <item>#69d2e7</item>
+        <item>#a7dbd8</item>
+        <item>#0b2e59</item>
+        <item>#0d6d59</item>
+        <item>#7ab317</item>
+        <item>#a0c55f</item>
+        <item>#fff600</item>
+        <item>#ff5a27</item>
+        <item>#a31a48</item>
+        <item>#dd577a</item>
+        <item>#AF8993</item>
+        <item>#0E768B</item>
+        <item>#FF9A7B</item>
+        <item>#65CE38</item>
+        <item>#47457C</item>
+        <item>#53C2AB</item>
+        <item>#8763D7</item>
+        <item>#12c19d</item>
+        <item>#8000BF</item>
+        <item>#D47500</item>
+        <item>#BA18AD</item>
+        <item>#FF0004</item>
+    </string-array>
+
+    <string-array name="filterArr">
+        <item>1977</item>
+        <item>Amaro</item>
+        <item>Brannan</item>
+        <item>Earlybird</item>
+        <item>Hefe</item>
+        <item>Hudson</item>
+        <item>Inkwell</item>
+        <item>Lomo</item>
+        <item>Lordkelvin</item>
+        <item>Nashville</item>
+        <item>Rise</item>
+        <item>Sierra</item>
+        <item>Sutro</item>
+        <item>Toaster</item>
+        <item>Valencia</item>
+        <item>Walden</item>
+        <item>Xproll</item>
+    </string-array>
+
+
+    <!--Main Option-->
+    <string name="txtCropRotate">Crop-Rotate</string>
+    <string name="txtAdjust">Adjust</string>
+    <string name="txtBrightness">Brightness</string>
+    <string name="txtContrast">Contrast</string>
+    <string name="txtSharpness">Sharpness</string>
+    <string name="txtSaturation">Saturation</string>
+    <string name="txtFilters">Filters</string>
+    <string name="txtBrush">Brush</string>
+    <string name="txtBlur">Blur</string>
+    <string name="txtGamma">Gamma</string>
+    <string name="txtSepia">Sepia</string>
+    <string name="txtVignette">Vignette</string>
+    <string name="txtToon">Toon</string>
+    <string name="txtText">Text</string>
+    <string name="txtSticker">Sticker</string>
+    <string name="txtBrushSize">Brush Size</string>
+    <string name="txtEditor">Editor</string>
+    <string name="txtBrushOpacity">Brush Opacity</string>
+    <string name="filter_normal">Normal</string>
+
+    <string name="txt_msg_changes_confirmation_dialog_msg1">Do you want to apply</string>
+    <string name="txt_apply">Apply</string>
+    <string name="txt_discard">Discard</string>
+    <string name="txt_msg_confirmation_dialog_cancel_editing">You want to cancel Image editing.</string>
+    <string name="pls_click_on_sticker">Please Click on Sticker</string>
+    <string name="txt_creation_saved_successfully">Your creation was saved successfully...</string>
+    <string name="txt_msg_changes_confirmation_dialog_msg2">changes?</string>
+    <string name="txt_crop">Crop</string>
+
+    <string name="save">Save</string>
+    <string name="txt_no_internet_connection">No internet connection</string>
+    <string name="app_folder_sticker">Stickers</string>
+    <string name="txt_image_is_not_load_yet">Image is not load yet</string>
+    <string name="txt_image_not_Detacted">Image not detached</string>
+    <string name="str_three_column">Three Column</string>
+    <string name="str_two_column">Two Column</string>
+    <string name="txt_collage">Collage</string>
+
+    <string name="admob_banner_ads_id_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_ads_id_test">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_interstitial_native_id_test">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_open_Ad_test">ca-app-pub-3940256099942544/3419835294</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="confirm_delete_photo">Are you sure you want to delete this photo?</string>
+    <string name="create_from_photo">Create freely</string>
+    <string name="create_frame_guide">Double-tap to view more options</string>
+    <string name="shadow_size">Shadow size</string>
+    <string name="border_size">Border size</string>
+    <string name="sticker">Sticker</string>
+    <string name="remove">Remove</string>
+    <string name="background">Background</string>
+    <string name="txt_about_us1">This is all about gallery app. If you want to create galleries, albums and build collage photos, our gallery app is worth try.\n\nWe will keep improving this app for best features and user experience.\n\nPlease write us at xyz@gmail.com for any suggestion.</string>
+    <string name="make_collage_photo">Make Collage Photo</string>
+    <string name="gallery_vault">Gallery Vault</string>
+    <string name="permission_necessary">Permission necessary</string>
+    <string name="enter_code">Enter Passcode</string>
+    <string name="draw_pattern">Draw Pattern</string>
+    <string name="text_recover_your_pass">Recover Password ?</string>
+    <string name="text_recover_pass_msg">Are you sure you want to recover your password?</string>
+    <string name="text_no">No</string>
+    <string name="text_yes">Yes</string>
+    <string name="txt_submit">SUBMIT</string>
+    <string name="txt_field_not_empty">Field can\'t empty</string>
+    <string name="txt_security_question">Security Question</string>
+    <string name="txt_set_passcode">Set-up</string>
+    <string name="txt_wrong_pattern">Pattern is Wrong\nPlease try again...</string>
+    <string name="txt_wrong_pass">Password is Wrong\nPlease try again...</string>
+    <string name="reenter_code">Re-enter PIN again</string>
+    <string name="enter_new_code">Enter New Passcode</string>
+    <string name="txt_draw_new_pattern">Draw New Pattern</string>
+    <string name="txt_confirm_new_pattern">Confirm New Pattern</string>
+    <string name="txt_change_pattern_successfully">Pattern Changed Successfully</string>
+    <string name="txt_pattern_confirmation_error">New and Conform Pattern Dosen\'t match Please try again...</string>
+    <string name="txt_change_password_successfully">Password Changed Successfully</string>
+    <string name="txt_pin_confirmation_error">Does\'t match new PIN and Confirmed PIN</string>
+    <string name="txt_try_again">Try Again...</string>
+    <string name="reenter_new_code">Re-enter New PIN again</string>
+    <string name="photo_vault">Photo vault</string>
+    <string name="video_vault">Video vault</string>
+    <string name="secret_snap">Secret snap</string>
+    <string name="add_file_in_private_vault">Add file in your Private Vault</string>
+    <string name="rate_now_text">Rate Private vault</string>
+    <string name="rate_now_text1">If you like Private vault, Please give us 5 star rating.</string>
+    <string name="txt_bad">BAD</string>
+    <string name="txt_good">GOOD</string>
+    <string name="move_to_vault">Move to vault</string>
+    <string name="wa_status">Watsapp Statuses</string>
+    <string name="download_wa_status_menu_title">Download status</string>
+    <string name="security_question">1. Security question*</string>
+    <string name="your_security_question_user_hint">Strongly Recommend you set up a security question and answer to enjoy more function and security. Without security question and answer, there will be more security hazards.</string>
+    <string name="answer">Answer</string>
+    <string name="plese_select_security_question">Please select security question</string>
+    <string name="txt_please_select_valid_question_and_answer">Please select valid Question and Answer</string>
+    <string name="txt_lock_style">Change Lock Style</string>
+    <string name="txt_pin_lock">Pin Lock</string>
+    <string name="txt_pattern_lock">Pattern Lock</string>
+    <string name="change_password">Change password</string>
+    <string name="txt_at_least_four_dot">Connect at least 4 dots\nPlz try Again</string>
+    <string name="txt_confirm_pattern">Confirm Pattern</string>
+    <string name="txt_pattern_cant_match">Pattern Can\'t match to old pattern.</string>
+    <string name="txt_confirm_old_pattern">Confirm old Pattern</string>
+    <string name="enter_old_code">Enter Old Passcode</string>
+    <string name="code_not_match">Code not match, try again!</string>
+    <string name="pin_lock">Pin lock</string>
+    <string name="change_password_your_password">Change your password</string>
+    <string name="vault_settings">Vault settings</string>
+    <string name="txt_file_access_permission_denied">File access permission denied</string>
+    <string name="txt_intruder_msg">This person snooped on your Secure vault</string>
+    <string name="txt_view_secret_snaps">Secret Snaps View</string>
+    <string name="txt_no_intruder_found">No intruders are found yet.</string>
+    <string name="general_settings">General settings</string>
+    <string name="light">Light</string>
+    <string name="pick_photo">Pick photo</string>
+    <string name="next">Next</string>
+    <string name="enter_your_passcode">Enter Your Passcode</string>
+    <string name="forgot_passcode">Forgot passcode?</string>
+    <string name="enable_secret_snap">2. Enable secret snap</string>
+    <string name="enable_secret_snap2">Enable secret snap</string>
+    <string name="txt_secret_snap">Secret snap</string>
+    <string name="enable_secret_snap_user_hint">Feature will capture intruder images silently after 3 failed attempt. This required you to allow camera access permission to the application.</string>
+    <string name="by_day">By day</string>
+    <string name="by_month">By month</string>
+    <string name="by_year">By year</string>
+    <string name="duplicate_photo">Duplicate photos</string>
+
+
+    <string name="Alert">Alert</string>
+    <string name="All_photos_of_the_same_group_cannot_be_selected">All photos of the same group cannot be selected.</string>
+    <string name="Are_you_sure_want_to_go_back">Are you sure want to go back?</string>
+    <string name="Are_you_sure_you_want_to_delete_selected_exact_photo">Are you sure you want to delete selected exact photo?</string>
+    <string name="Are_you_sure_you_want_to_delete_selected_exact_photos">Are you sure you want to delete selected exact photos?</string>
+    <string name="Are_you_sure_you_want_to_delete_selected_similar_photo">Are you sure you want to delete selected similar photo?</string>
+    <string name="Are_you_sure_you_want_to_delete_selected_similar_photos">Are you sure you want to delete selected similar photos?</string>
+    <string name="Confirm_Delete">Confirm Delete</string>
+    <string name="Deleting_exact_duplicate_photos">Deleting exact duplicate photos, please wait…</string>
+    <string name="Deleting_similar_duplicate_photos">Deleting similar duplicate photos, please wait…</string>
+    <string name="Duplicates_Found">Duplicates Found :</string>
+    <string name="Exact">Exact</string>
+    <string name="Exact_Duplicates">Exact Duplicates :</string>
+    <string name="Exact_Duplicates_Cleaned">Exact Duplicates Cleaned :</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="Marked">Marked :</string>
+    <string name="Markedvalue">Marked : 0 (0.00 KB)</string>
+    <string name="Memory_Occupied">Memory Occupied :</string>
+    <string name="NO">No</string>
+    <string name="No_exact_duplicates_found">No exact duplicates found.</string>
+    <string name="No_similar_duplicates_found">No similar duplicates found.</string>
+    <string name="Please_select_at_least_one_photo">Please select at least one photo.</string>
+    <string name="Scanning_is_in_progress_Do_you_want_to_abort">Scanning is in progress. Do you want to abort?</string>
+    <string name="Similar">Similar</string>
+    <string name="Similar_Duplicates">Similar Duplicates :</string>
+    <string name="Similar_Duplicates_Cleaned">Similar Duplicates Cleaned :</string>
+    <string name="Sorting_duplicates">Sorting duplicates…</string>
+    <string name="Space_Regained">Space Regained :</string>
+    <string name="Stop_Scanning">Stop Scanning</string>
+    <string name="We_found_more_than">We found more than </string>
+    <string name="YES">YES</string>
+    <string name="a">Delete all duplicates by using select all option available here</string>
+    <string name="action_auto_mark">Select All</string>
+    <string name="action_scan">Scan</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_un_mark_all">Deselect All</string>
+    <string name="b">View similar and exact photos here</string>
+    <string name="c">Delete individual sets</string>
+    <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="close">Close</string>
+    <string name="d">Exclude images from future scans</string>
+    <string name="dfalt">Default</string>
+    <string name="duplicates_photos_in_your_mobile"> duplicates photos in your mobile.</string>
+    <string name="e">Delete selected images.</string>
+    <string name="exact_photo_to_exceptions">exact photo to exceptions</string>
+    <string name="exact_photos_to_exceptions">exact photos to exceptions</string>
+    <string name="exceptions">Exceptions</string>
+    <string name="matching_level">Matching Level</string>
+    <string name="matching_levels">Settings</string>
+    <string name="matching_levels_condition">(Applicable only for similar scan)</string>
+    <string name="notification">Notification</string>
+    <string name="notifies_on_finding_number_of_duplicates">(Notifies on finding number of duplicates)</string>
+    <string name="number_of_image_in_gallery">Number of Image Files in Gallery:</string>
+    <string name="ok">Ok</string>
+    <string name="please_wait">Scanning time depends on number of files.</string>
+    <string name="results">Results</string>
+    <string name="scanning_photos">Scanning Photos :</string>
+    <string name="scanning_photos_please_wait">Scanning photos, please wait…</string>
+    <string name="search_menu_title">Search</string>
+    <string name="set">Set :</string>
+    <string name="similar_photo_to_exceptions">similar photo to exceptions</string>
+    <string name="similar_photos_to_exceptions">similar photos to exceptions</string>
+    <string name="sortingplswait">Sorting photos, please wait…</string>
+    <string name="sortingtime">Sorting time depends on number of files.</string>
+    <string name="space_occupied">Information</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="successfully_added">Successfully added</string>
+    <string name="yes">yes</string>
+    <string name="duplicate_photos">Duplicate Photos</string>
+    <string name="something_went_wrong_please_try_again">Something wen\'t wrong.. Please try again...</string>
+    <string name="give_permission">Give permission</string>
+    <string name="require_permission_for_this_operation">Storage permission is required to perform this operation</string>
+
+    <!-- Share Dialog -->
+
+    <string name="rating_dialog_experience">How was your experience with us?</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_never">Never</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_suggestions">Suggest us what went wrong and we\'ll work on it!</string>
+    <string name="txt_app_move_message">We have moved our application. To get the latest update and new feature, please download our new version.</string>
+    <string name="txt_download">Download</string>
+    <string name="cancel_selection">Cancel Selection</string>
+    <string name="txt_alert">Alert</string>
+    <string name="txt_vault_alert">Secure vault is not setup. Please setup now to continue this action.</string>
+    <string name="please_try_again">Try again later</string>
+    <string name="play">Play</string>
+    <string name="txt_duplicate_photo_warning_text1">Do you want to find duplicate photos again? Click on Rescan button.</string>
+    <string name="txt_duplicate_photo_warning_text2">It will take some time.</string>
+    <string name="txt_rescan">Rescan</string>
+    <string name="txt_we_need_some_access">We need some access!</string>
+    <string name="txt_ok_exelementory">OK!</string>
+    <string name="txt_allow_all_access">Allow All Access</string>
+    <string name="txt_camera_permission_msg">We would like to access on your camera to take photographs and edit them directly and storage for scanning all photos and arrange them in proper structure.</string>
+    <string name="app_name_new">Gallery</string>
+    <string name="biometric_login_for_mykase">Biometric login for Secure Vault</string>
+    <string name="log_in_using_your_biometric_credential">Log in using your biometric credential</string>
+    <string name="error_maximum_attempt_30_sec_wait">You have tried maximum attempts with invalid Biometrics Details. Please try after 30 sec.</string>
+    <string name="innvalid_biometrics">Invalid Biometrics.</string>
+    <string name="grid_size">Grid Size</string>
+    <string name="txt_please_select_photo">Pleaes select photo</string>
+    <string name="photos">Photos</string>
+    <string name="main_application_id">ca-app-pub-3355785087454308~9615122213</string>
+    <string name="policy">Policy</string>
+    <string name="places">Places</string>
+
+</resources>

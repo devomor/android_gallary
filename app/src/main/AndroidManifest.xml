@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.photo.photography"
+    android:installLocation="auto">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" /> <!-- for android 11 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <application
+        android:name="com.photo.photography.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/gallery"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppMainTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme,android:label">
+        <activity
+            android:name="com.photo.photography.act.ActVideos"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="com.photo.photography.act.ActAboutUs"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.act.ActSplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.APP_GALLERY" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.photogallery.photography.OPEN_ALBUM" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.photo.photography.act.ActPlayer"
+            android:label="@string/video_player"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.photo.photography.act.ActPermission"
+            android:label="@string/video_player"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.act.ActMain"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.albumsAct" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.photo.photography.act.ActSettings"
+            android:exported="true"
+            android:label="@string/settings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.photo.photography.act.ActCollageView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.act.ActPalette"
+            android:exported="true"
+            android:label="@string/palette"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.PALETTE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.photo.photography.secure_vault.ActVaultOption"
+            android:excludeFromRecents="true"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActVault"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActPickImage"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActFullScreenImageViewer"
+            android:exported="true"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.albumPhoto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.camera.action.REVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.photo.photography.secure_vault.ActRecoveryEmail"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActRecoverSetupLock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActChangePasswordLock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActChangeLockStyle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActSecretSnap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActSecretSnapView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.act.ActWAStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.act.ActSingleMedia"
+            android:exported="true"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.albumPhoto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.camera.action.REVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.photo.photography.act.ActEditMedia"
+            android:exported="true"
+            android:label="@string/edit"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.photo.photography.act.ActCropImage"
+            android:label="@string/txt_crop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.act.ActDownloadedPackage"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.act.ActCollageCreate"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.collage.screen.ActPhotoCollage"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.collage.screen.ActDownloadedPackage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.collage.screen.ActTemplateDetail"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.collage.screen.ActFrameDetail"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.collage.screen.ActSelectPhoto"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.secure_vault.ActSetupPinLock"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreenTheme" -->
+        <activity
+            android:name="com.photo.photography.duplicatephotos.act.ActDuplicateHomeMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.duplicatephotos.act.ActPhotoList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.photo.photography.duplicatephotos.act.ActScanning"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.photo.photography.duplicatephotos.services.ServiceKillNotifications" />
+        <service android:name="com.photo.photography.duplicatephotos.services.ServiceDeviceLockMonitor" />
+        <service android:name="com.photo.photography.duplicatephotos.backgroundasynk.ScheduleScan" />
+
+        <receiver android:name="com.photo.photography.duplicatephotos.broadcast.NotificationDuplicat" />
+        <receiver
+            android:name="com.photo.photography.duplicatephotos.broadcast.DeviceBootMonitor"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/main_application_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <service
+            android:name="com.photo.photography.LookForMediaJobs"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

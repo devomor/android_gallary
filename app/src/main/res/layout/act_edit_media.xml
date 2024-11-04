@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/row_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adContainerView"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Main Editor View-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/light_gray2">
+
+                <LinearLayout
+                    android:id="@+id/linImgStickerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.photo.photography.edit_views.StickerViewEdit.StickerView
+                            android:id="@+id/sticker_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:showBorder="true"
+                            app:showIcons="true">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/mainUserImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_horizontal"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivOverlayDisplay"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_horizontal"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:visibility="gone" />
+
+                        </com.photo.photography.edit_views.StickerViewEdit.StickerView>
+
+                        <com.photo.photography.edit_views.BrushViewEdit.DrawingViews
+                            android:id="@+id/wachi_drawing_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone" />
+
+                        <!--<ImageView
+                            android:id="@+id/undo"
+                            android:layout_width="@dimen/margin_50"
+                            android:layout_height="@dimen/margin_50"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/app_black_opacity_back_btn_circle"
+                            android:padding="@dimen/margin_8"
+                            android:src="@drawable/ic_back_24dp" />
+
+                        <ImageView
+                            android:id="@+id/redo"
+                            android:layout_width="@dimen/margin_50"
+                            android:layout_height="@dimen/margin_50"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/app_black_opacity_back_btn_circle"
+                            android:padding="@dimen/margin_8"
+                            android:rotation="180"
+                            android:src="@drawable/ic_back_24dp" />-->
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:clipToPadding="false"
+                    android:paddingTop="@dimen/margin_60"
+                    android:paddingBottom="@dimen/margin_50"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/linSeekBarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_60"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:id="@+id/seekbarLineCenter"
+                            android:layout_width="@dimen/margin_2"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_centerInParent="true"
+                            android:background="@color/color_white"
+                            android:visibility="gone" />
+
+                        <SeekBar
+                            android:id="@+id/seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:max="100"
+                            android:maxWidth="@dimen/margin_4"
+                            android:maxHeight="@dimen/margin_4"
+                            android:minWidth="@dimen/margin_4"
+                            android:minHeight="@dimen/margin_4"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/e_seekbar_progress"
+                            android:splitTrack="false"
+                            android:thumb="@drawable/e_seekbar_thumbs" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--Bottom Bar-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Bottom Option Main and Main.SubOption-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/color_bottom_option_back"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:gravity="center">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerAdjust"
+                            style="@style/optionRecyclerView" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerOverlayCategory"
+                            style="@style/optionRecyclerView" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerFrame"
+                            style="@style/optionRecyclerView" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerBrushOption"
+                            style="@style/optionRecyclerView" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerFilter"
+                            style="@style/optionRecyclerView" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerStickerTextOption"
+                            style="@style/optionRecyclerView" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerStickerImgOption"
+                            style="@style/optionRecyclerView" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerStickerCategory"
+                            style="@style/optionRecyclerView"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerMainAppOption"
+                        style="@style/optionRecyclerView"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Bottom Sub.SubOption-->
+        <LinearLayout
+            android:id="@+id/linThirdDivisionOption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bottom_option_back"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhiteOverlay">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSticker"
+                    style="@style/optionRecyclerView"
+                    android:layout_width="match_parent"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerFont"
+                    style="@style/optionRecyclerView"
+                    android:layout_width="match_parent"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerBubble"
+                    style="@style/optionRecyclerView"
+                    android:layout_width="match_parent"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerOverlay"
+                    style="@style/optionRecyclerView"
+                    android:layout_width="match_parent"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/margin_15"
+                    android:paddingRight="@dimen/margin_15"
+                    android:text="Editor"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textsize_16" />
+
+                <!--suppress AndroidDomInspection -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@id/tvText"
+                    android:layout_alignBottom="@id/tvText"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="15dp"
+                    android:src="@drawable/icon_cross_white"
+                    android:tint="@color/colorBlack" />
+
+                <!--suppress AndroidDomInspection -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCheckMark"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@id/tvText"
+                    android:layout_alignBottom="@id/tvText"
+                    android:layout_alignParentRight="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="15dp"
+                    android:src="@drawable/icon_checkmark_white"
+                    android:tint="@color/colorBlack" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relTextEditingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:src="@color/black_new" />
+
+            <EditText
+                android:id="@+id/etAddTextSticker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Your Text"
+                android:inputType="textMultiLine|textCapWords"
+                android:textColor="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textCursorDrawable="@drawable/icon_edittext_cursor_white"
+                android:textSize="@dimen/txt_size_30" />
+
+            <!--suppress AndroidDomInspection -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEditingClose"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/icon_cross_white"
+                app:tint="@color/white_new" />
+
+            <!--suppress AndroidDomInspection -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEditingApply"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/icon_checkmark_white"
+                app:tint="@color/white_new" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/adContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

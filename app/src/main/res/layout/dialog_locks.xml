@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/DialogMainLayout">
+
+    <LinearLayout
+        android:id="@+id/ll_total_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:id="@+id/memoryregaintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:padding="6.0sp"
+                android:text="@string/exceptions"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lockText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10.0sp"
+                android:paddingRight="10.0sp"
+                android:text="@string/app_name_new"
+                android:textColor="@color/black"
+                android:textSize="15.0sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/margin_20">
+
+            <TextView
+                android:id="@+id/lockCancel"
+                style="@style/DialogButton"
+                android:text="@string/cancel" />
+
+            <TextView
+                android:id="@+id/lockOk"
+                style="@style/DialogButton"
+                android:minWidth="@dimen/margin_130"
+                android:text="@string/ok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10">
+
+    <ImageView
+        android:id="@+id/ivTabThumb"
+        android:layout_width="@dimen/margin_24"
+        android:layout_height="@dimen/margin_24"
+        android:padding="@dimen/margin_2"
+        android:src="@drawable/e_tab_photos" />
+
+    <TextView
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name_new"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_12" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivTabStrip"-->
+    <!--        android:layout_width="@dimen/margin_50"-->
+    <!--        android:layout_height="@dimen/home_tab_strip_height"-->
+    <!--        android:src="@drawable/icon_home_tab_strip" />-->
+
+</LinearLayout>

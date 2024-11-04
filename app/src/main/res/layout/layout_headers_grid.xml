@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/mlayout_ratenow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/margin_3"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_8"
+        android:paddingBottom="@dimen/margin_8">
+
+        <ImageView
+            android:id="@+id/thumb_ic"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:src="@drawable/icon_thumb" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_toRightOf="@id/thumb_ic"
+            android:src="@drawable/icon_thumb"
+            android:text="@string/rate_now_text"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_16" />
+
+        <ImageView
+            android:id="@+id/thumb_close"
+            android:layout_width="@dimen/margin_25"
+            android:layout_height="@dimen/margin_25"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:padding="6dp"
+            android:src="@drawable/icon_close_gray" />
+
+        <TextView
+            android:id="@+id/txt_rate_now1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thumb_ic"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_16"
+            android:src="@drawable/icon_thumb"
+            android:text="@string/rate_now_text1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_14" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_rate_now1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16">
+
+            <TextView
+                android:id="@+id/txt_bad"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="@dimen/margin_30"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:gravity="center"
+                android:src="@drawable/icon_thumb"
+                android:text="@string/txt_bad"
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/textsize_14" />
+
+            <TextView
+                android:id="@+id/txt_good"
+                android:layout_width="@dimen/margin_80"
+                android:layout_height="@dimen/margin_30"
+                android:background="@drawable/icon_round_corner_fill_color_blue"
+                android:gravity="center"
+                android:src="@drawable/icon_thumb"
+                android:text="@string/txt_good"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_14" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@id/layout"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/color_light_grey" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

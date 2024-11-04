@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardElevation="@dimen/margin_5"
+    app:cardCornerRadius="@dimen/margin_24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lockpad_back"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_30"
+        android:paddingVertical="@dimen/margin_12">
+
+
+        <ProgressBar
+            android:id="@+id/progress_splash"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/margin_5" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:padding="6.0sp"
+            android:text="Loading Ad..."
+            android:textColor="@color/colorBlack"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
